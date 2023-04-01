@@ -5,14 +5,14 @@
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1" />
 
-    <!-- Bootstrap CSS -->
+    <!-- build:css css/main.css -->
     <link rel="stylesheet" href="node_modules/bootstrap/dist/css/bootstrap.min.css" />
-
-    <!-- Additional CSS must be placed after Bootstrap CSS -->
     <link rel="stylesheet" href="node_modules/font-awesome/css/font-awesome.min.css" />
     <link rel="stylesheet" href="node_modules/bootstrap-social/bootstrap-social.css" />
-    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Lobster|Open+Sans" />
     <link rel="stylesheet" href="css/styles.css" />
+    <!-- endbuild -->
+
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Lobster|Open+Sans" />
   
     <title>home page</title>
 </head>
@@ -25,7 +25,7 @@
                     <h3>My Portfolio and a Little About Me. </h3>
                 </div>
                 <div class="col-md-4 col-xl-2 mt-4">
-                    <a data-toggle="modal" data-target="#contactMe" role="button" class="btn btn-info btn-lg">Contact Me</a>  
+                    <!--<a data-toggle="modal" data-target="#contactMe" role="button" class="btn btn-info btn-lg">Contact Me</a>-->
                 </div>
             </div>
         </div>
@@ -41,7 +41,7 @@
                 <div class="modal-body">
                     <div class="container-fluid">
                         <div class="col">
-                            <a role="button" class="btn btn-link" href="tel:+19705181446"><i class="fa fa-phone"></i> 1-970-518-1446<br></a>      <!-- role is for screen readers, btn link is for linking to stylesheet at top-->
+                                 <!-- role is for screen readers, btn link is for linking to stylesheet at top-->
                             <a role="button" class="btn btn-link" href="mailto:dgadeken@gmail.com"><i class="fa fa-envelope-o"></i> dgadeken@gmail.com</a>
                             <button data-dismiss="modal" class="btn btn-secondary">Cancel</button>
                         </div>
@@ -53,7 +53,7 @@
 
     <nav class="navbar navbar-expand-sm navbar-dark sticky-top">        <!-- navbar dark makes letters lighter color to go better with a dark navbar, stick top makes navbar stay at top of page when scrolling down-->
         <div class="container">                                         <!-- changes padding of text menu-->
-            <a class="navbar-brand" href="home.html"><img src="img/icon.jpg" height="30" width="30" /></a>  <!-- returns to home/index.html when clicked-->
+            <a class="navbar-brand" href="index.html"><img src="img/icon.jpg" height="30" width="30" /></a>  <!-- returns to home/index.html when clicked-->
             <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#portfolioNavbar">     <!-- creates a nav bar that collapses to three stacked lines icon in extra small viewport, ml auto pushes it to right side-->
                 <span class="navbar-toggler-icon"></span>
             </button>
@@ -80,7 +80,7 @@
                 <div class="col-4 col-sm-2 offset-1">
                     <h5>Links</h5>
                     <ul class="list-unstyled">
-                        <li><a href="home.html">Home</a></li>
+                        <li><a href="index.html">Home</a></li>
                         <li><a href="aboutme.html">About</a></li>
                         <li><a href="portfolio.html">Portfolio</a></li>
                         <li><a href="contactme.html">Contact</a></li>
@@ -92,7 +92,7 @@
                 </div>
                 <div class="col-sm-4 text-center">
                     <h5>Contact</h5>
-                    <a role="button" class="btn btn-link" href="tel:+9705181446"><i class="fa fa-phone"></i> 1-970-518-1446<br></a>     
+                         
             	    <a role="button" class="btn btn-link" href="mailto:dgadeken@gmail.com"><i class="fa fa-envelope-o"></i> dgadeken@gmail.com</a>
                 </div>
            </div>
@@ -100,9 +100,11 @@
     </footer>
 
     <!-- jQuery must come first, then Popper.js, then the Bootstrap JavaScript plugins.-->
+    <!-- build:js js/main.js -->
     <script src="node_modules/jquery/dist/jquery.slim.min.js"></script>
     <script src="node_modules/popper.js/dist/umd/popper.min.js"></script>
     <script src="node_modules/bootstrap/dist/js/bootstrap.min.js"></script>
+    <!-- endbuild -->
 
 </body>
 </html>
